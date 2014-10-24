@@ -3,15 +3,16 @@ package com.inter12.pinellia.common.framework;
 import java.util.Iterator;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
-import java.util.logging.Logger;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 
 import com.inter12.pinellia.common.util.CommonServiceLocator;
 
 public class LManager {
 
-    private final Logger           logger                 = Logger.getLogger(LManager.class.getName());
+    private final Logger           logger                 = LoggerFactory.getLogger(LManager.class.getName());
 
     private static final int       MAX_WAIT_TIME          = 5;
 

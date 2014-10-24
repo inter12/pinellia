@@ -2,11 +2,13 @@ package com.inter12.pinellia.common.framework;
 
 import java.util.*;
 import java.util.Map.Entry;
-import java.util.logging.Logger;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class LDefaultContext {
 
-    private final Logger                logger     = Logger.getLogger(LDefaultContext.class.getName());
+    private final Logger                logger     = LoggerFactory.getLogger(LDefaultContext.class.getName());
 
     public static final String          USER_ID    = "userId";
     static ThreadLocal<LDefaultContext> contexts   = new ThreadLocal<LDefaultContext>();
